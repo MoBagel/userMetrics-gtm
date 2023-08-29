@@ -1,0 +1,5 @@
+homepage: "https://8ndpoint.com/"
+documentation: "https://github.com/MoBagel/usermetrics-gtm/blob/main/README.md"
+versions:
+  - sha: e4101914c017c73c9b5982203ccf37f09995513c
+    changeNotes: Initial commit.
