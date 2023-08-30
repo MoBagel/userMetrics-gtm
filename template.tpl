@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "userMetrics tracking",
+  "displayName": "MB - AI Audience Setup",
   "brand": {
     "id": "brand_dummy",
     "displayName": "",
@@ -31,15 +31,15 @@ ___TEMPLATE_PARAMETERS___
 [
   {
     "type": "TEXT",
-    "name": "targetTable",
-    "displayName": "BigQuery Table Name",
+    "name": "mbCompanyId",
+    "displayName": "MB Company ID",
     "simpleValueType": true,
     "canBeEmptyString": true
   },
   {
     "type": "TEXT",
-    "name": "gaAccount",
-    "displayName": "Google Analytics Measurement ID",
+    "name": "ga4Id",
+    "displayName": "GA4 Measurement ID",
     "simpleValueType": true,
     "canBeEmptyString": true,
     "valueValidators": [
@@ -48,7 +48,7 @@ ___TEMPLATE_PARAMETERS___
         "args": [
           "^G-\\w{10}$"
         ],
-        "errorMessage": "GA ID should be \"G-XXXXXXXXXX\""
+        "errorMessage": "GA4 Measurement ID should be \"G-XXXXXXXXXX\""
       }
     ],
     "valueHint": "G-XXXXXXXXXX"
@@ -56,9 +56,8 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "CHECKBOX",
     "name": "enableTdid",
-    "checkboxText": "Enable Tdid Feature",
+    "checkboxText": "Enable TDID",
     "simpleValueType": true,
-    "help": "It will send event \"get-tdid\" to Google Analytics"
   }
 ]
 
