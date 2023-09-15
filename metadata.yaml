@@ -1,6 +1,8 @@
 homepage: "https://8ndpoint.com/"
 documentation: "https://github.com/MoBagel/usermetrics-gtm-template/blob/main/README.md"
 versions:
+  - sha: e4837b59d0187bb764d24084525d4a756c57bf74
+    changeNotes: Edit ga4Id regex rule to allow empty
   - sha: 529f054adaaa5dc2905a5803aef962d6b75a2c6f
     changeNotes: Update arguments name
   - sha: 63a674f64de3624a0243b1673912a5a7b5300818
