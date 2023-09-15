@@ -46,7 +46,7 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "REGEX",
         "args": [
-          "^G-\\w{10}$"
+          "^(G-\w{10})?$"
         ],
         "errorMessage": "GA4 Measurement ID should be \"G-XXXXXXXXXX\""
       }
