@@ -1,6 +1,8 @@
 homepage: "https://8ndpoint.com/"
 documentation: "https://github.com/MoBagel/usermetrics-gtm-template/blob/main/README.md"
 versions:
+  - sha: ee07138dfd9ace3bb7f93fcb90e73bedc104a12d
+    changeNotes: Fix tracking file name
   - sha: 4a483103ebd58012a4eb070bec5dfcf20da370be
     changeNotes: Add isGaMeasurementProtocol field
   - sha: 5f4c71286f98ab50190701e9243e663440e8a0c0
