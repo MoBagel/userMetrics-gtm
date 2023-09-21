@@ -1,12 +1,4 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "TAG",
@@ -30,34 +22,41 @@ ___TEMPLATE_PARAMETERS___
 
 [
   {
-    "type": "TEXT",
-    "name": "mbCompanyId",
     "displayName": "MB Company ID",
     "simpleValueType": true,
+    "name": "mbCompanyId",
+    "type": "TEXT",
     "canBeEmptyString": true
   },
   {
-    "type": "TEXT",
-    "name": "ga4Id",
-    "displayName": "GA4 Measurement ID",
-    "simpleValueType": true,
-    "canBeEmptyString": true,
     "valueValidators": [
       {
-        "type": "REGEX",
         "args": [
           "^(G-\\w{10})?$"
         ],
-        "errorMessage": "GA4 Measurement ID should be \"G-XXXXXXXXXX\""
+        "errorMessage": "GA4 Measurement ID should be \"G-XXXXXXXXXX\"",
+        "type": "REGEX"
       }
     ],
+    "displayName": "GA4 Measurement ID",
+    "simpleValueType": true,
+    "name": "ga4Id",
+    "type": "TEXT",
+    "canBeEmptyString": true,
     "valueHint": "G-XXXXXXXXXX"
   },
   {
-    "type": "CHECKBOX",
+    "simpleValueType": true,
     "name": "enableTdid",
     "checkboxText": "Enable TDID",
+    "type": "CHECKBOX"
+  },
+  {
+    "type": "CHECKBOX",
+    "name": "isGaMeasurementProtocol",
+    "checkboxText": "Installed GA4 via Shopify Native Integration",
     "simpleValueType": true,
+    "displayName": ""
   }
 ]
 
@@ -79,7 +78,7 @@ const initData = () => {
   setInWindow('endpointConfigs', endpointConfigs, true);
 };
 
-const scriptUrl = 'https://tracking-library.8ndpoint.com/usermetrics.js';
+const scriptUrl = 'https://tracking-library.8ndpoint.com/usermetrics-dev.js?122';
 
 const checkPermissions = () => {
   if (!queryPermission('inject_script', scriptUrl)) {
@@ -206,7 +205,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://tracking-library.8ndpoint.com/usermetrics*.js"
+                "string": "https://tracking-library.8ndpoint.com/usermetrics*.js?122"
               }
             ]
           }
