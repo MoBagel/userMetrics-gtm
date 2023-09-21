@@ -78,7 +78,7 @@ const initData = () => {
   setInWindow('endpointConfigs', endpointConfigs, true);
 };
 
-const scriptUrl = 'https://tracking-library.8ndpoint.com/usermetrics-dev.js?122';
+const scriptUrl = 'https://tracking-library.8ndpoint.com/usermetrics.js';
 
 const checkPermissions = () => {
   if (!queryPermission('inject_script', scriptUrl)) {
@@ -205,7 +205,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://tracking-library.8ndpoint.com/usermetrics*.js?122"
+                "string": "https://tracking-library.8ndpoint.com/usermetrics*.js?"
               }
             ]
           }
