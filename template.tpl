@@ -50,13 +50,6 @@ ___TEMPLATE_PARAMETERS___
     "name": "enableTdid",
     "checkboxText": "Enable TDID",
     "type": "CHECKBOX"
-  },
-  {
-    "type": "CHECKBOX",
-    "name": "isGaMeasurementProtocol",
-    "checkboxText": "Installed GA4 via Shopify Native Integration",
-    "simpleValueType": true,
-    "displayName": ""
   }
 ]
 
