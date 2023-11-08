@@ -46,6 +46,35 @@ ___TEMPLATE_PARAMETERS___
     "valueHint": "G-XXXXXXXXXX"
   },
   {
+    "type": "TEXT",
+    "name": "pixelId",
+    "displayName": "META Pixel ID",
+    "simpleValueType": true,
+    "valueValidators": [
+      {
+        "type": "REGEX",
+        "args": [
+          "^\\d{16}$"
+        ],
+        "errorMessage": "should be 16 characters number"
+      }
+    ],
+    "canBeEmptyString": true,
+    "valueHint": "16 characters number"
+  },
+  {
+    "type": "CHECKBOX",
+    "name": "enableGaUserRecord",
+    "checkboxText": "Enable GA Event UserInfo",
+    "simpleValueType": true
+  },
+  {
+    "type": "CHECKBOX",
+    "name": "enableAiaTag",
+    "checkboxText": "Enable AIA Tag",
+    "simpleValueType": true
+  },
+  {
     "simpleValueType": true,
     "name": "enableTdid",
     "checkboxText": "Enable TDID",
@@ -198,7 +227,7 @@ ___WEB_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "https://tracking-library.8ndpoint.com/usermetrics*.js?"
+                "string": "https://tracking-library.8ndpoint.com/usermetrics.js"
               }
             ]
           }
