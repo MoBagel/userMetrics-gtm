@@ -251,4 +251,10 @@ ___NOTES___
 
 Created on 8/28/2023, 6:04:05 PM
 
+Version: 1.1.0
+Updated: 2023-11-09 16:31:37
+Add variable: 
+pixelId: string;
+enableGaUserRecord: boolean;
+enableAiaTag: boolean;
 
