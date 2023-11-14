@@ -54,7 +54,7 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "REGEX",
         "args": [
-          "^\\d{16}$"
+          "^(?:\d{16})?$"
         ],
         "errorMessage": "should be 16 characters number"
       }
