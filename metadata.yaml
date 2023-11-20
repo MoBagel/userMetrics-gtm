@@ -1,6 +1,8 @@
 homepage: "https://8ndpoint.com/"
 documentation: "https://github.com/MoBagel/usermetrics-gtm-template/blob/main/README.md"
 versions:
+  - sha: 1e6a5129632d594093c7d34fb9a38bc3334f7f21
+    changeNotes: Add pixelId, enableGaUserRecord and enableAiaTag field
   - sha: b6d648fb9aa999df7e443ba2a5d4191fd92cc48f
     changeNotes: Remove isGaMeasurementProtocol field
   - sha: ee07138dfd9ace3bb7f93fcb90e73bedc104a12d
