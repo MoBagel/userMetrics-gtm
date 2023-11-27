@@ -50,17 +50,7 @@ ___TEMPLATE_PARAMETERS___
     "name": "pixelId",
     "displayName": "META Pixel ID",
     "simpleValueType": true,
-    "valueValidators": [
-      {
-        "type": "REGEX",
-        "args": [
-          "^(?:\\d{16})?$"
-        ],
-        "errorMessage": "should be 16 characters number"
-      }
-    ],
-    "canBeEmptyString": true,
-    "valueHint": "16 characters number"
+    "canBeEmptyString": true
   },
   {
     "type": "CHECKBOX",
