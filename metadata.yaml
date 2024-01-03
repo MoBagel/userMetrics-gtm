@@ -1,6 +1,8 @@
 homepage: "https://8ndpoint.com/"
 documentation: "https://github.com/MoBagel/usermetrics-gtm-template/blob/main/README.md"
 versions:
+  - sha: 210b7334981de89715eac9663fce709ac167575e
+    changeNotes: Remove pixel Id field
   - sha: 15bef782f01a9e7b2b627d61d47293398ac34cc2
     changeNotes: Remove pixel Id rule
   - sha: 1e6a5129632d594093c7d34fb9a38bc3334f7f21
