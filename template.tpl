@@ -46,13 +46,6 @@ ___TEMPLATE_PARAMETERS___
     "valueHint": "G-XXXXXXXXXX"
   },
   {
-    "type": "TEXT",
-    "name": "pixelId",
-    "displayName": "META Pixel ID",
-    "simpleValueType": true,
-    "canBeEmptyString": true
-  },
-  {
     "type": "CHECKBOX",
     "name": "enableGaUserRecord",
     "checkboxText": "Enable GA Event UserInfo",
@@ -247,3 +240,9 @@ Add variable:
 pixelId: string;
 enableGaUserRecord: boolean;
 enableAiaTag: boolean;
+
+Version: 1.1.2
+Updated: 2024-01-03 15:58:12
+Remove variable:
+pixelId: string;
+
