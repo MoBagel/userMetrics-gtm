@@ -1,6 +1,8 @@
 homepage: "https://8ndpoint.com/"
 documentation: "https://github.com/MoBagel/usermetrics-gtm-template/blob/main/README.md"
 versions:
+  - sha: 58a2deef5f2755fc45b093d77169473d6890589b
+    changeNotes: Add aiaTagEventName field
   - sha: 210b7334981de89715eac9663fce709ac167575e
     changeNotes: Remove pixel Id field
   - sha: 15bef782f01a9e7b2b627d61d47293398ac34cc2
