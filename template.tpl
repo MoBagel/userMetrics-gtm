@@ -55,7 +55,16 @@ ___TEMPLATE_PARAMETERS___
     "type": "CHECKBOX",
     "name": "enableAiaTag",
     "checkboxText": "Enable AIA Tag",
-    "simpleValueType": true
+    "simpleValueType": true,
+    "subParams": [
+      {
+        "type": "TEXT",
+        "name": "aiaTagEventName",
+        "displayName": "Custom AIA Tag Event Name",
+        "simpleValueType": true,
+        "canBeEmptyString": true,
+      }
+    ],
   },
   {
     "simpleValueType": true,
